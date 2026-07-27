@@ -67,6 +67,9 @@ This is just my own observation. In fall of 2022, ChatGPT hit the scene, followe
 
 Agentic AI became widely available in late 2024. Agentic AI programs have "agency" and although they are still under human guidance, they have much more capabilities to make decisions about how to compile a program. They can create much more involved and complicated codebases with multiple files, folders, assets, all within the same project directory. This increased capability makes these tools a lot more powerful and versatile.
 
+### My favorite definition
+When I was learning to program, I discovered [Corey Schafer's Youtube Channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g). He has tons of great videos on programming and python-specific topics. His definition of the distinction between vibe coding and software development is "software development requires review and understanding the code. Vibe coding doesn't". I think that is the simplest definition I have heard.  
+
 ### AI Agent Tool Categories
 There are tons of agent tools available these days. How do you know which one you should use? I've grouped them into rough categories. These tools are always changing and new ones are coming on board so this list will quickly go out of date.
 
