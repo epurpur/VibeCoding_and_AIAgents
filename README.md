@@ -7,8 +7,7 @@ Last updated 08/15/26
 ## **About Me**
 
 ### Link to recording of this workshop
-- [View on PanOpto](https://nordvpn.com/link-checker/?srsltid=AfmBOopGtI-Joz1fRqE3V95zwog7rcU8HOFdvsICTwQM3tMMqkyYSTWo)
-- [View on Youtube](https://nordvpn.com/link-checker/?srsltid=AfmBOopGtI-Joz1fRqE3V95zwog7rcU8HOFdvsICTwQM3tMMqkyYSTWo)
+- [View on Youtube](https://www.youtube.com/watch?v=lkRWxXmkZUw)
 
 
 Erich Purpur
