@@ -94,12 +94,28 @@ AI tools, especially AI agents are not free! Often, using a chatbot there will b
 ----------------------------------------------------------------------------------------------------
 
 ### Demo projects
-Let's show a few examples of demo projects prompts and walk through them the old way with Chatbots vs the newer way with agents. **Disclaimer:** As of writing this (Summer 2026), unfortunately UVA does not license an AI Agent tool, so all examples shown will be with tools that either cost something or have firm usage limits. 
+Let's show a few examples of demo projects prompts and walk through them the old way with Chatbots vs the newer way with agents. <i>**Disclaimer:** As of writing this (Summer 2026), unfortunately UVA does not license an AI Agent tool, so all examples shown will be with tools that either cost something or have firm usage limits. </i>
 
-##### Sample Prompts
-- I am a reference librarian at the University of Virginia. In the reference desk virtual chat, I routinely answer common questions that are easily googled and am hoping to offload some of that to a bot so that I can focus my efforts on more time consuming reference questions which require deep research. Create a chatbot feature to answer common questions such as "When is the library open?", "Can I use the library even if I am not a student?", "When are my books due?". Use the [UVA Library website](https://library.virginia.edu/) as your source of documentation for these answers. For the UI features, I want to use a [University of Virginia color scheme](https://brand.virginia.edu/design-assets/colors). 
-- I want to create an affordable housing dashboard for the City of Charlottesville. I have [this](https://opendata.charlottesville.org/datasets/320d465ddf0d498796da6491e21f6dde_43/explore) dataset for tax parcels in the city and [this](https://opendata.charlottesville.org/datasets/c371ad0b81024822bad1147ff6bb24c4_50/explore?location=38.029000%2C-78.477000%2C12) data for city neighborhoods. I want a dashboard with median property value prices by neighborhood. I also want an interactive feature where you can input your yearly income and will determine which neighborhoods you can live in the city. Let's use a simple calculation for home affordability of 3x your annual income for a home. For the UI features, I want to use a [University of Virginia color scheme](https://brand.virginia.edu/design-assets/colors). 
-- I like to go to the gym and want to create a workout tracker to log my workouts and also to help me predict what my next workout should be based on previous workouts and other related data points. In this app, I first want a section that allows me to input my workout and record sets, reps, weights, and any other relevant notes. Then I want a section each day to include my other data like general recovery, sleep, stress levels, and diet. The diet section should have inputs for the 3 major macronutrients: Carbohydrates, Protein, Fats. Find information sources that help calculate workout recover time. Tell me what those sources are and let me verify them. Based on all the information I have entered, predict my recovery level for the next day, which will help me determine when to work out again. For the UI, use a clean looking library such as [GetUIKit](https://getuikit.com/).
+**Prompt:** Create a Python Streamlit application called Housing_Affordability_Agent that runs locally. This file (charlottesville_assessments_with_neighborhoods.csv) is data containing tax parcel data for the city of Charlottesville, Virginia. The key columns in the dataset are assessment (parcel value) and neighborhood.
+
+The dashboard should include:
+
+City Overview
+- total number of parcels
+- Median parcel value
+- Mean parcel value
+- Histogram of parcel values
+
+Neighborhood Analysis
+- Table showing neighborhood names, number of parcels, median parcel value, and mean parcel value
+- Rank neighborhoods by affordability (lowest median value to highest)
+
+Affordability Calculator
+- assume households can afford homes valued at 3x annual income
+- provide an input box for annual income
+- when the user clicks "Calculate Affordability" button, compute their affordability threshold
+- Identify neighborhoods where the median parcel value is less than the person's affordability
+- Display their threshold, a list of affordable neighborhoods, and a table indicating whether each neighborhood is affordable or not
 
 ----------------------------------------------------------------------------------------------------
 # Prompt Engineering with the CLEAR Framework
