@@ -85,7 +85,7 @@ There are tons of agent tools available these days. How do you know which one yo
 ##### AI Coding Agents
 - [Claude Code](https://claude.com/product/claude-code), [OpenAI Codex](https://openai.com/codex/), [Google Antigravity](https://antigravity.google/)
 - More powerful but more complex to work with
-- Systems tha tcan plan, write, and deploy code more autonomously
+- Systems that can plan, write, and deploy code more autonomously
 - You give a prompt, it figures out the rest
 
 ## Tokens
