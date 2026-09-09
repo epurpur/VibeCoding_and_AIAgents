@@ -1,7 +1,7 @@
 # Vibe Coding & AI Agents Workshop
 
 ```
-Last updated 08/15/26
+Last updated 09/09/26
 ```
 
 ## **About Me**
