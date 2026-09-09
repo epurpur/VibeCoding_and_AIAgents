@@ -91,6 +91,9 @@ There are tons of agent tools available these days. How do you know which one yo
 ## Tokens
 AI tools, especially AI agents are not free! Often, using a chatbot there will be a free tier of service which has usage limits. More often than not, AI Agents are not free. Commonly, these usage limits are quantified as **tokens**. Without going too far into details, each time you prompt an AI Chatbot or Agent, you are using tokens for your prompt and also for the response returned to you. Depending on your account level, you'll have a usage limit. Agents use a lot of tokens and often you'll have to be at the "pro" account level or higher to use an agent due to the usage demands of those products. Commonly, the "pro" level is $18 - $20 per month. 
 
+## UVA AI Tools Available
+UVA ITS provides an ever-changing list of available AI tools, which are [available here](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=dbe41947dbe3f91066d98f38139619db).
+
 ----------------------------------------------------------------------------------------------------
 
 ### Demo projects
