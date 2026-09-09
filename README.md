@@ -67,7 +67,14 @@ This is just my own observation. In fall of 2022, ChatGPT hit the scene, followe
 
 Agentic AI became widely available in late 2024. Agentic AI programs have "agency" and although they are still under human guidance, they have much more capabilities to make decisions about how to compile a program. They can create much more involved and complicated codebases with multiple files, folders, assets, all within the same project directory. This increased capability makes these tools a lot more powerful and versatile.
 
-### My favorite definition
+### Imperative vs Declarative Language
+I think it is worth taking a minute to acknowledge the difference in language of traditional programming versus vibe coding using an LLM. 
+
+**Traditional Programming:** Traditional programming languages are built around specific control. You say(type) what to do, in what order, and under what conditions. You get perfect predictability and repeatability in exchange for having to spell out every step. Ambiguity is not allowed. A compiler or interpreter will not guess what you meant. This is imperative language.
+
+**LLMs:** When instructing an LLM to write code, you declare your intentions but generally don't care at how the code arrives at that outcome. For example, if you give the instructions: "Write me a function to calculate the first 100 prime numbers", you want a function to run that gives you a list of these numbers. The model fills many decisions of how to get there. This is declarative in the sense that you can under-specify nearly everything and still get a plausible result including things that imperative systems can't parse at all like "make the UX feel fancier". 
+
+### What is the difference between software development and vibe coding? My favorite definition
 When I was learning to program, I discovered [Corey Schafer's Youtube Channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g). He has tons of great videos on programming and python-specific topics. His definition of the distinction between vibe coding and software development is "software development requires review and understanding the code. Vibe coding doesn't". I think that is the simplest definition I have heard.  
 
 ### AI Agent Tool Categories
@@ -98,6 +105,16 @@ UVA ITS provides an ever-changing list of available AI tools, which are [availab
 
 ### Demo projects
 Let's show a few examples of demo projects prompts and walk through them the old way with Chatbots vs the newer way with agents. <i>**Disclaimer:** As of writing this (Summer 2026), unfortunately UVA does not license an AI Agent tool, so all examples shown will be with tools that either cost something or have firm usage limits. </i>
+
+
+##### Scenario 1: All In One app builder
+I will use an all in one service like [Base 44](https://base44.com/) for this example. This is vibe coding at its purest. I don't have to know anything other than what the outcome should look like. All the coding, hosting, etc is handled by the service. 
+**Prompt:** Create a web app for me that tells the weather forecast for Charlottesville, VA. Find a free weather API to get the data from. Create a clean user interface with a reddish background.
+- Change temperature to Fahrenheit
+- Add a box for other city's weather
+
+
+##### Scenario 2: AI Coding Agent
 
 **Prompt:** Create a Python Streamlit application called Housing_Affordability_Agent that runs locally. This file (charlottesville_assessments_with_neighborhoods.csv) is data containing tax parcel data for the city of Charlottesville, Virginia. The key columns in the dataset are assessment (parcel value) and neighborhood.
 
