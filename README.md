@@ -45,6 +45,13 @@ The UVA Library StatLab provides free statistics & similar technical consulting 
 # Vibe Coding
 Vibe Coding is programming or software development assisted by AI where the human describes a project or task in a prompt to a Large Language Model (LLM), which generates source code. The human then reviews and refines the code to ensure accuracy and security. In traditional programming, you are responsible for translating your idea into code, thinking about the structure, syntax, and implementation. In vibe coding, the translation step is handled for you. The gap between having an idea and building it out is removed, or substantially shortened. 
 
+### Imperative vs Declarative Language
+I think it is worth taking a minute to acknowledge the difference in language of traditional programming versus vibe coding using an LLM. Human language came to be as a form of communication between people and people are not robots. Human language is nuanced, has room for interpretation, and can be ambiguous. Programming languages were developed for humans to communicate with computers. Programming languages are unambiguous and deterministic. Computers do not have the ability to interpret nuance or reason for themselves beyond the extent that humans have programmed them to do so.
+
+**Traditional Programming:** Traditional programming languages are built around specific control. You say(type) what to do, in what order, and under what conditions. You get perfect predictability and repeatability in exchange for having to spell out every step. Ambiguity is not allowed. A compiler or interpreter will not guess what you meant. This is imperative language.
+
+**LLMs:** When instructing an LLM to write code, you declare your intentions but generally don't care at how the code arrives at that outcome. For example, if you give the instructions: "Write me a function to calculate the first 100 prime numbers", you want a function to run that gives you a list of these numbers. The model fills many decisions of how to get there. This is declarative in the sense that you can under-specify nearly everything and still get a plausible result including things that imperative systems can't parse at all like "make the UX feel fancier". 
+
 ### Origin of Vibe Coding
 The origins of the term can be traced back to a [tweet by Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383?lang=en) in 2025. 
 
@@ -66,13 +73,6 @@ The origins of the term can be traced back to a [tweet by Andrej Karpathy](https
 This is just my own observation. In fall of 2022, ChatGPT hit the scene, followed by a quick succession of similar tools like Google's Bard (now Gemini), Microsoft Copilot, and so on. All of a sudden, you could use the chatbot to write code for you in basically any language. It was, and still is, very helpful for short, isolated code snippets and scripts. However, a major problem was that it lacked the context to understand larger and more complicated codebases. 
 
 Agentic AI became widely available in late 2024. Agentic AI programs have "agency" and although they are still under human guidance, they have much more capabilities to make decisions about how to compile a program. They can create much more involved and complicated codebases with multiple files, folders, assets, all within the same project directory. This increased capability makes these tools a lot more powerful and versatile.
-
-### Imperative vs Declarative Language
-I think it is worth taking a minute to acknowledge the difference in language of traditional programming versus vibe coding using an LLM. 
-
-**Traditional Programming:** Traditional programming languages are built around specific control. You say(type) what to do, in what order, and under what conditions. You get perfect predictability and repeatability in exchange for having to spell out every step. Ambiguity is not allowed. A compiler or interpreter will not guess what you meant. This is imperative language.
-
-**LLMs:** When instructing an LLM to write code, you declare your intentions but generally don't care at how the code arrives at that outcome. For example, if you give the instructions: "Write me a function to calculate the first 100 prime numbers", you want a function to run that gives you a list of these numbers. The model fills many decisions of how to get there. This is declarative in the sense that you can under-specify nearly everything and still get a plausible result including things that imperative systems can't parse at all like "make the UX feel fancier". 
 
 ### What is the difference between software development and vibe coding? My favorite definition
 When I was learning to program, I discovered [Corey Schafer's Youtube Channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g). He has tons of great videos on programming and python-specific topics. His definition of the distinction between vibe coding and software development is "software development requires review and understanding the code. Vibe coding doesn't". I think that is the simplest definition I have heard.  
