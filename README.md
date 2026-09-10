@@ -109,37 +109,50 @@ Let's show a few examples of demo projects prompts and walk through them the old
 
 ##### Scenario 1: All In One app builder
 I will use an all in one service like [Base 44](https://base44.com/) for this example. This is vibe coding at its purest. I don't have to know anything other than what the outcome should look like. All the coding, hosting, etc is handled by the service. 
+
 **Prompt:** Create a web app for me that tells the weather forecast for Charlottesville, VA. Find a free weather API to get the data from. Create a clean user interface with a reddish background.
+
+**Follow Up:**
 - Change temperature to Fahrenheit
 - Add a box for other city's weather
 
 
 ##### Scenario 2: AI Coding Agent
+Agents are much more powerful tools and can do a lot of things. One major difference is that they can interact with the filesystem on your computer to create and manipulate files. You *should* be asked by the Agent for permission to do create, edit, delete files and you can grant permanent access or respond step by step. One of the major limitations of this workshop is that we only have access to the free version of these agents, which limit functionality greatly. This example will at least give you an idea of a use case for agents. 
 
-**Prompt:** Create a Python Streamlit application called Housing_Affordability_Agent that runs locally. This file (charlottesville_assessments_with_neighborhoods.csv) is data containing tax parcel data for the city of Charlottesville, Virginia. The key columns in the dataset are assessment (parcel value) and neighborhood.
+**Prompt:** Build a Pomodoro / focus timer web app as a single self-contained HTML file 
+(index.html) with inline CSS and JavaScript — no external libraries, no CDN 
+links, no internet access, no build step, no backend. It should run by just 
+opening the file in a browser, and persist data using localStorage only.
 
-The dashboard should include:
+Core functionality:
+1. A large, clear circular or radial progress timer showing time remaining, 
+   with a big MM:SS display in the center.
+2. Three modes: "Focus" (default 25 min), "Short Break" (default 5 min), and 
+   "Long Break" (default 15 min), switchable via tabs/buttons.
+3. Start, Pause, and Reset controls.
+4. An audible chime when a session ends.
+5. A settings panel (collapsible) letting the user customize the length (in 
+   minutes) of each of the three session types, and whether auto-advance is on.
 
-City Overview
-- total number of parcels
-- Median parcel value
-- Mean parcel value
-- Histogram of parcel values
 
-Neighborhood Analysis
-- Table showing neighborhood names, number of parcels, median parcel value, and mean parcel value
-- Rank neighborhoods by affordability (lowest median value to highest)
+Design:
+- Clean, modern, minimal aesthetic. Dark mode by default with a toggle for 
+  light mode.
+- Smooth color transitions between modes (e.g. a warm color for Focus, a cool 
+  color for Break).
+- Responsive layout that looks good on both desktop and mobile browser widths.
+- Subtle animations: progress ring filling/draining smoothly, gentle pulse or 
+  fade when a session completes.
+- The browser tab title should update to show the countdown (e.g. "12:34 - 
+  Focus") so the user can glance at their tab.
 
-Affordability Calculator
-- assume households can afford homes valued at 3x annual income
-- provide an input box for annual income
-- when the user clicks "Calculate Affordability" button, compute their affordability threshold
-- Identify neighborhoods where the median parcel value is less than the person's affordability
-- Display their threshold, a list of affordable neighborhoods, and a table indicating whether each neighborhood is affordable or not
+**Follow Up:** 
+- Add a text input right beneath the timer where you can type what you are currently focusing on (e.g., "Finish quarterly report").
 
 ----------------------------------------------------------------------------------------------------
 # Prompt Engineering with the CLEAR Framework
-I have taught an [entire workshop on this topic](https://github.com/epurpur/Prompt_Engineering), but I think it is important to state some best practices when prompting AI tools, especially agents. Because Agents have much more autonomy to make decisions of how to create what you want, it is important to deliver your message correctly. We have an entire framework around prompt engineering, [The CLEAR Framework](https://www.sciencedirect.com/science/article/pii/S0099133323000599), developed by UVA Library Dean Leo Lo. Here is a concise summary of how to interact with an agent. 
+I have taught an [entire workshop on this topic](https://github.com/epurpur/Prompt_Engineering), but I think it is important to state some best practices when prompting AI tools, especially when Vibe Coding with an AI agent (or just a normal chatbot). Because Agents have much more autonomy to make decisions of how to create what you want, it is important to deliver your message correctly. We have an entire framework around prompt engineering, [The CLEAR Framework](https://www.sciencedirect.com/science/article/pii/S0099133323000599), developed by UVA Library Dean Leo Lo. Here is a concise summary of how to interact with an agent. 
 
 | Letter   | Description |
 | -------- | ------- |
